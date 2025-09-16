@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.1 (2025-09-16)
+
+### Bug Fixes
+
+- Build
+  ([`59c4fec`](https://github.com/myriade-ai/autocode/commit/59c4fec73828cd2abc4171e3bd19e019bc654715))
+
+
 ## v0.1.0 (2025-08-09)
 
 ### Bug Fixes
