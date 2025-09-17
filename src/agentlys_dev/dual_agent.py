@@ -9,10 +9,10 @@ implementing the specific tasks assigned by the Manager.
 import logging
 
 import nest_asyncio
-from autochat import Message
+from agentlys_dev.agent_dev import agent as dev_agent
+from agentlys_dev.agent_manager import agent as manager_agent
 
-from autocode.agent_dev import agent as dev_agent
-from autocode.agent_manager import agent as manager_agent
+from agentlys.model import Message
 
 nest_asyncio.apply()
 logger = logging.getLogger(__name__)

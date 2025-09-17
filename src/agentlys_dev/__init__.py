@@ -3,7 +3,7 @@ import os
 import sys
 
 # 10ks char = 250 lines => 2500 tokens
-os.environ["AUTOCHAT_OUTPUT_SIZE_LIMIT"] = "10_000"
+os.environ["AGENTLYS_OUTPUT_SIZE_LIMIT"] = "10_000"
 
 # Configure logging
 logging.basicConfig(
@@ -14,8 +14,3 @@ logging.basicConfig(
 
 # Silence some overly verbose loggers
 logging.getLogger("PIL").setLevel(logging.WARNING)
-
-
-from .code_editor import *  # noqa: E402, F403
-from .code_editor_utils import *  # noqa: E402, F403
-from .terminal import *  # noqa: E402, F403

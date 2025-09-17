@@ -1,6 +1,5 @@
 # CHANGELOG
 
-
 ## v0.1.0 (2025-08-09)
 
 ### Bug Fixes
@@ -38,7 +37,7 @@ PRO-167
 - Draft for git & pr
   ([`ea42f4d`](https://github.com/myriade-ai/autocode/commit/ea42f4dda377420c7e69d093b485d350654eab55))
 
-- Fix AUTOCHAT_OUTPUT_SIZE_LIMIT for read_file, add warning on text long
+- Fix AGENTLYS_OUTPUT_SIZE_LIMIT for read_file, add warning on text long
   ([`05a6622`](https://github.com/myriade-ai/autocode/commit/05a6622c5b7560d1d05ab58cf475e62b2fb06d73))
 
 - Fix typing for 3.9
@@ -84,9 +83,9 @@ PRO-167
 - **server**: Add micro HTTP server to listen for GitHub issue webhooks
   ([`ba5362d`](https://github.com/myriade-ai/autocode/commit/ba5362d28065d6a1c7cdfcbfe16f5036b06dc6cb))
 
-The new `autocode.github_issue_server` module provides a tiny HTTP server able to receive GitHub
-  "issues" webhooks. When a new issue is opened, the issue title and body are concatenated into a
-  prompt and fed to the developer agent in a background thread.
+The new `agentlys_dev.github_issue_server` module provides a tiny HTTP server able to receive GitHub
+"issues" webhooks. When a new issue is opened, the issue title and body are concatenated into a
+prompt and fed to the developer agent in a background thread.
 
-A console entry point `autocode-github-issue-server` has been added to `pyproject.toml` so the
-  server can be started with a simple CLI command.
+A console entry point `agentlys-dev-github-issue-server` has been added to `pyproject.toml` so the
+server can be started with a simple CLI command.

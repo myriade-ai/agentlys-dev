@@ -4,7 +4,7 @@ import threading
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from typing import Tuple
 
-from autocode.agent_dev import agent as dev_agent
+from agentlys_dev.agent_dev import agent as dev_agent
 
 logger = logging.getLogger(__name__)
 

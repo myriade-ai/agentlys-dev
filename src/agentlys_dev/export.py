@@ -8,7 +8,7 @@ import logging
 import sys
 from pathlib import Path
 
-from autocode.directory_utils import list_non_gitignore_files
+from agentlys_tools.code_editor.directory_utils import list_non_gitignore_files
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

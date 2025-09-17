@@ -3,10 +3,10 @@ import signal
 import sys
 import tempfile
 
-from autochat.model import Message
+from agentlys_dev.agent_dev import agent as dev_agent
+from agentlys_dev.git import Git
 
-from autocode.agent_dev import agent as dev_agent
-from autocode.git import Git
+from agentlys.model import Message
 
 logger = logging.getLogger(__name__)
 

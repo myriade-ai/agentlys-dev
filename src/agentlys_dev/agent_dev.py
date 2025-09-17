@@ -1,9 +1,9 @@
-from autochat import Autochat
+from agentlys_dev.git import Git, PullRequest
+from agentlys_dev.render import render_url_and_return_screenshot
+from agentlys_tools.code_editor import CodeEditor
+from agentlys_tools.terminal import Terminal
 
-from autocode.code_editor import CodeEditor
-from autocode.git import Git, PullRequest
-from autocode.render import render_url_and_return_screenshot
-from autocode.terminal import Terminal
+from agentlys import Agentlys
 
 INSTRUCTION = """
 ### Role & Purpose
@@ -61,7 +61,7 @@ Your primary objective is to utilize tools/functions to implement the manager's 
 Always verify that your actions and outputs align with manager instructions and requirements.
 """
 
-agent = Autochat(
+agent = Agentlys(
     instruction=INSTRUCTION,
     provider="openai",
     model="o3",

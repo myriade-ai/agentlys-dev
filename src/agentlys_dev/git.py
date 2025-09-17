@@ -19,12 +19,12 @@ class Git:
     @staticmethod
     def create_branch_and_checkout(name: str):
         """Create a new branch and checkout to it.
-        If the name does not start with "autocode/", it will be added.
+        If the name does not start with "agentlys-dev/", it will be added.
         """
         # if self.branch() != "master":
         # raise Exception("This function is only available in the master branch.")
-        if not name.startswith("autocode/"):
-            name = "autocode/" + name
+        if not name.startswith("agentlys-dev/"):
+            name = "agentlys-dev/" + name
         return subprocess.run(
             ["git", "checkout", "-b", name], capture_output=True, text=True
         ).stdout

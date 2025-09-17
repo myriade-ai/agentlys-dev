@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from autocode.export import collect_files_content
+from agentlys_dev.export import collect_files_content
 
 tests_dir = Path(__file__).parent
 package_lock = tests_dir / "package-lock.test.json"

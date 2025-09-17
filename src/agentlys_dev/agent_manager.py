@@ -1,4 +1,4 @@
-from autochat import Autochat
+from agentlys import Agentlys
 
 INSTRUCTION = """
 ### Role & Purpose
@@ -40,7 +40,7 @@ def ask_user():
     return prompt
 
 
-agent = Autochat(
+agent = Agentlys(
     instruction=INSTRUCTION,
     provider="openai",
     model="o3",
