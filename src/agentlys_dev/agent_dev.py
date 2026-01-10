@@ -1,9 +1,9 @@
-from agentlys_dev.git import Git, PullRequest
-from agentlys_dev.render import render_url_and_return_screenshot
+from agentlys import Agentlys
 from agentlys_tools.code_editor import CodeEditor
 from agentlys_tools.terminal import Terminal
 
-from agentlys import Agentlys
+from agentlys_dev.git import Git, PullRequest
+from agentlys_dev.render import render_url_and_return_screenshot
 
 INSTRUCTION = """
 ### Role & Purpose
@@ -63,8 +63,8 @@ Always verify that your actions and outputs align with manager instructions and 
 
 agent = Agentlys(
     instruction=INSTRUCTION,
-    provider="openai",
-    model="o3",
+    provider="anthropic",
+    model="claude-opus-4-5",
     name="Developer",
 )
 
