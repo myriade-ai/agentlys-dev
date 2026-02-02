@@ -8,15 +8,15 @@ resolution-markers = [
 
 [[package]]
 name = "agentlys"
-version = "1.2.0"
+version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pillow" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8d/d4/53b9c0ff63040062d47f704e0cf519ed25e4872c1d9b64bd98b51053c649/agentlys-1.2.0.tar.gz", hash = "sha256:9c26b5c981aef9705b1161c60f71ac559ddbbfb69440fc70318fda4c370cc553", size = 32646, upload-time = "2026-01-04T10:31:48.26Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0b/42/10e9dc17a0729056bac86abbf2faac726e3e338f398d2cecb2243cf6309f/agentlys-1.6.0.tar.gz", hash = "sha256:0cd879848684fe1a6c9fe9e9ed388699cedd0515e54ccdc801ecbdd4d07df239", size = 37835, upload-time = "2026-01-27T15:46:42.431Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5b/17/898109e9ce8b40814793cb9772996e3ca383981eca997a976bb264bc7249/agentlys-1.2.0-py3-none-any.whl", hash = "sha256:6b833c9986bf06ff688546d92fa7868f75de7f8d7e43d32c6528fc3546746f86", size = 28348, upload-time = "2026-01-04T10:31:46.946Z" },
+    { url = "https://files.pythonhosted.org/packages/f7/ec/c09b64d97c0a98da6a1df332952ca9b698c2ce20848cbec359d9d52c0980/agentlys-1.6.0-py3-none-any.whl", hash = "sha256:8dd72e6a35e103f7450c4dd83455be1e7f05ca701f9b3964b5e628d8c8f61db9", size = 31718, upload-time = "2026-01-27T15:46:35.021Z" },
 ]
 
 [package.optional-dependencies]
@@ -48,7 +48,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agentlys", extras = ["all"], specifier = "==1.2.0" },
+    { name = "agentlys", extras = ["all"], specifier = "==1.6.0" },
     { name = "agentlys-tools", extras = ["all"], specifier = ">=0.1.0" },
     { name = "pillow" },
     { name = "playwright" },
