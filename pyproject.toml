@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "agentlys-tools[all]>=0.1.0",
-    "agentlys[all]==1.2.0",
+    "agentlys[all]==1.6.1",
     "pillow",
     "playwright",
     "pygithub>=2.6.1",
