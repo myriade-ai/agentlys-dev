@@ -12,6 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/ruff-action@v2
+        with:
+          # 0.16 widened the default rule set; this repo has no [tool.ruff]
+          # config of its own, so an unpinned ruff fails CI on unchanged code.
+          version: "0.15.22"
 
   test:
     runs-on: ubuntu-latest
