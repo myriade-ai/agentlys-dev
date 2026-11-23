@@ -9,6 +9,9 @@ on:
 
 jobs:
   release:
+    outputs:
+      released: ${{ steps.semrel.outputs.released }}
+      tag: ${{ steps.semrel.outputs.tag }}
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.ref == 'refs/heads/master' }}
 
     runs-on: ubuntu-latest
@@ -23,6 +26,17 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Python Semantic Release
+        id: semrel
         uses: python-semantic-release/python-semantic-release@v9.21.0
         with:
-          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  # A release made with GITHUB_TOKEN does not trigger other workflows, so the
+  # PyPI publish is called from here instead of on `release: published`.
+  publish:
+    needs: release
+    if: ${{ needs.release.outputs.released == 'true' }}
+    uses: ./.github/workflows/publish.yml
+    with:
+      ref: ${{ needs.release.outputs.tag }}
+    secrets: inherit
